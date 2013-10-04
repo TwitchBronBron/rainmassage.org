@@ -1,5 +1,5 @@
 <?php
-$title = "Rain Massage: Contact Us";
+$title = "Contact Us";
 //head includes
 ob_start();
 ?>

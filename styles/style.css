@@ -22,6 +22,13 @@ body{
     font-family: 'Lusitana', serif;
 }
 
+li{
+    text-align:left;
+}
+
+p{
+    text-align:left;
+}
 #navbar{
     margin-top:10px;
     text-align:center;
@@ -64,8 +71,28 @@ h1{
     transform: rotate(-.5deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
+.logo{
+    text-align:center;
+    width:800px;
+    margin:auto; 
+    position:absolute; 
+    top:120px; 
+    left:0px;
+    text-shadow: 1px 1px 2px white;
+}
+
+#banner .logo{
+    position:absolute;
+    top: 0px;
+}
+
 #banner{
     border:3px solid white;
+    overflow:hidden;
+    padding:0px;
+    position:relative;
+    overflow:hidden;
+    height:80px;
 }
 #banner span{
     font-family: 'IM Fell English SC', serif;
@@ -84,15 +111,30 @@ h1{
     background-image: url('../images/flower.jpg ');
 }
 
-#logo{
-    text-align:center;
-    width:800px;
-    margin:auto; 
-    position:absolute; 
-    top:120px; 
-    left:0px;
-    text-shadow: 1px 1px 2px white;
+#homeBanner{
+    border:3px solid white;
+    overflow:hidden;
+    padding:0px;
+    position:relative;
+    overflow:hidden;
 }
+#homeBanner span{
+    font-family: 'IM Fell English SC', serif;
+}
+#homeBanner img{
+    width:100%;
+}
+
+#homeBanner:before{
+    border:3px solid white;
+    background-image: url('../images/flower.jpg ');
+}
+
+#homeBanner:after{
+    border:2px solid white;
+    background-image: url('../images/flower.jpg ');
+}
+
 
 .stacked {
     background: #fff;
@@ -106,7 +148,7 @@ h1{
     margin-bottom:30px;
     padding:20px;
     width:800px;
-    min-height:200px;
+    min-height:20px;
 }
 .stacked:before, .stacked:after {
     content: "";

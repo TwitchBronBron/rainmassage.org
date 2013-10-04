@@ -1,5 +1,5 @@
 <?php
-$title = "Welcome to RainMassage.org";
+$title = "Home";
 //head includes
 ob_start();
 ?>
@@ -17,13 +17,25 @@ ob_end_clean();
 //body 
 ob_start();
 ?>
-<h1>Welcome to RainMassage.org</h1>
-<p>This will eventually be the web page for RainMassage.org. It is currently in development. 
-    In the meantime, send us an email at <a href="mailto:rainmassagetherapy@gmail.com">RainMassageTherapy@gmail.com</a>
-    <br/>
-    <br/>
-    Thank you for visiting. Check in soon for more updates!
+<div id="homeBanner" class="stacked">
+    <img src="images/flower.jpg" style=""/>
+    <div class="logo">
+        <span style="font-size:40px; ">Rain Therapeutic Massage</span>
+        <br/>
+        <span>RELAXING~ATTENTIVE~INDIVIDUALLY~NATURALISTIC</span>
+    </div>
+</div>
+<h1>Welcome to RAIN Massage!</h1>
+<p>
+    Our goal is to make your massage as therapeutic as possible. We want to help give you a better quality of life. 
+    If you are looking for a relaxing massage in the comfort of your own home then you have come to the right place.
+    We use all natural creams, lotions, and gels from <a href='http://www.natural-formulations.com/'>Natural Formulations Company</a>. 
 </p>
+<p>
+    Currently, RAIN massage is a traveling company. We come to you. It doesn't matter if the massage is 
+    for you, your significant other, your friends or your coworkers. We even offer training massages for 
+    you and your significant other so that you can learn how to correctly give each other a beneficial massage! 
+    Check out the rest of our site to see what we're all about!</p>
 
 <?php
 $bodyContents = ob_get_contents();
