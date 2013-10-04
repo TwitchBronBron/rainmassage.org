@@ -31,9 +31,6 @@ ob_start();
     Arrangements can sometimes be made for farther location requests. 
 
 </p>
-
-Package & Deals: "Packages and Deals to come! Stay tuned! To get on our mailing list please enter your email *here*
-(Bron, Can you somehow set up a mailing list type thing on my email, so when someone enters their email into the box, it automatically updates to my email and i have a folder or group within my email account that is my "mailing" list?)
 <?php
 $bodyContents = ob_get_contents();
 ob_end_clean();

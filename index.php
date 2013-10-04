@@ -35,7 +35,7 @@ ob_start();
     Currently, RAIN massage is a traveling company. We come to you. It doesn't matter if the massage is 
     for you, your significant other, your friends or your coworkers. We even offer training massages for 
     you and your significant other so that you can learn how to correctly give each other a beneficial massage! 
-    Check out the rest of our site to see what we're all about!</p>
+    Check out the rest of our site to see what we have to offer.</p>
 
 <?php
 $bodyContents = ob_get_contents();

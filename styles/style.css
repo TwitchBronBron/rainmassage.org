@@ -20,8 +20,11 @@ body{
     margin:0px;
     text-align:center;
     font-family: 'Lusitana', serif;
+    font-size:18px;
 }
-
+.content{
+    min-height:400px;
+}
 li{
     text-align:left;
 }
@@ -44,8 +47,8 @@ h1{
 
 #navbar a{
     color: #4D4D4D;
-    margin-left: 40px;
-    margin-right:40px;
+    margin-left: 35px;
+    margin-right:35px;
     text-decoration:none;
 }
 
@@ -112,7 +115,7 @@ h1{
 }
 
 #homeBanner{
-    border:3px solid white;
+    border:0px solid white;
     overflow:hidden;
     padding:0px;
     position:relative;
@@ -122,7 +125,8 @@ h1{
     font-family: 'IM Fell English SC', serif;
 }
 #homeBanner img{
-    width:100%;
+    border:3px solid white;
+    width:99%;
 }
 
 #homeBanner:before{
@@ -148,7 +152,6 @@ h1{
     margin-bottom:30px;
     padding:20px;
     width:800px;
-    min-height:20px;
 }
 .stacked:before, .stacked:after {
     content: "";

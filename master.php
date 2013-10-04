@@ -25,7 +25,7 @@
             <a id="contactUsLink" href="ContactUs.php">Contact Us</a> 
         </div>
 
-        <div class="stacked">
+        <div class="content stacked">
             <?php echo isset($bodyContents) ? $bodyContents : ""; ?>
         </div>
     </body>
