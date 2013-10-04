@@ -1,0 +1,143 @@
+/* 
+    Document   : stylenew.css
+    Created on : Jun 4, 2013, 10:24:05 AM
+    Author     : bplumb
+    Description:
+        
+    wood.png and ticks.png were used from www.subtlepatterns.com
+*/
+html{
+    border:0px solid black;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    /*background-color: #4d2822;*/
+    background: #4d2822 url(../images/wood.jpg);
+    background-repeat: repeat;
+    padding:0px;
+    margin:0px;
+    text-align:center;
+    font-family: 'Lusitana', serif;
+}
+
+#navbar{
+    margin-top:10px;
+    text-align:center;
+    min-height:20px;
+    font-family: 'Lusitana', serif;
+
+}
+
+h1{
+    font-family: 'Lusitana', serif;
+
+}
+
+#navbar a{
+    color: #4D4D4D;
+    margin-left: 40px;
+    margin-right:40px;
+    text-decoration:none;
+}
+
+#navbar a:hover{
+    color: black !important;
+    border-bottom:1px solid black !important;
+    text-decoration: underline;
+}
+
+#navbar:before{
+    -webkit-transform: rotate(.8deg);  /* Chrome, Safari 3.1+  */
+    -moz-transform: rotate(.8deg);  /* Firefox 3.5-15 */
+    -ms-transform: rotate(.8deg);  /* IE 9 */
+    -o-transform: rotate(.8deg);  /* Opera 10.50-12.00 */
+    transform: rotate(.8deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+#navbar:after{
+    -webkit-transform: rotate(-.5deg);  /* Chrome, Safari 3.1+  */
+    -moz-transform: rotate(-.5deg);  /* Firefox 3.5-15 */
+    -ms-transform: rotate(-.5deg);  /* IE 9 */
+    -o-transform: rotate(-.5deg);  /* Opera 10.50-12.00 */
+    transform: rotate(-.5deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+#banner{
+    border:3px solid white;
+}
+#banner span{
+    font-family: 'IM Fell English SC', serif;
+}
+#banner img{
+    width:100%;
+}
+
+#banner:before{
+    border:3px solid white;
+    background-image: url('../images/flower.jpg ');
+}
+
+#banner:after{
+    border:2px solid white;
+    background-image: url('../images/flower.jpg ');
+}
+
+#logo{
+    text-align:center;
+    width:800px;
+    margin:auto; 
+    position:absolute; 
+    top:120px; 
+    left:0px;
+    text-shadow: 1px 1px 2px white;
+}
+
+.stacked {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: 26px auto 0;
+    padding: 24px;
+    position: relative;
+    background-image: url('../images/ticks.png');
+    background-repeat: repeat;
+    border:1px solid gray;
+    margin-bottom:30px;
+    padding:20px;
+    width:800px;
+    min-height:200px;
+}
+.stacked:before, .stacked:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.stacked:before {
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    left: -5px;
+    top: 4px;
+    -webkit-transform: rotate(1.8deg);  /* Chrome, Safari 3.1+  */
+    -moz-transform: rotate(1.8deg);  /* Firefox 3.5-15 */
+    -ms-transform: rotate(1.8deg);  /* IE 9 */
+    -o-transform: rotate(1.8deg);  /* Opera 10.50-12.00 */
+    transform: rotate(1.8deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+    -webkit-backface-visibility: hidden;
+    background-image: url('../images/ticks.png');
+}
+.stacked:after {
+    background: #f6f6f6;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    right: -3px;
+    top: 1px;
+    -webkit-transform: rotate(-1.5deg);  /* Chrome, Safari 3.1+  */
+    -moz-transform: rotate(-1.5deg);  /* Firefox 3.5-15 */
+    -ms-transform: rotate(-1.5deg);  /* IE 9 */
+    -o-transform: rotate(-1.5deg);  /* Opera 10.50-12.00 */
+    transform: rotate(-1.5deg);  /* Firefox 16+, IE 10+, Opera 12.10+ */
+    -webkit-backface-visibility: hidden;
+    background-image: url('../images/ticks.png');
+}
