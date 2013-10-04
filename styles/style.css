@@ -47,9 +47,10 @@ h1{
 
 #navbar a{
     color: #4D4D4D;
-    margin-left: 35px;
-    margin-right:35px;
+    margin-left: 30px;
+    margin-right:30px;
     text-decoration:none;
+    white-space: nowrap;
 }
 
 #navbar a:hover{
