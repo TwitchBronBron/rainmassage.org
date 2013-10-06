@@ -62,12 +62,20 @@ ob_start();
     <b>Couples' Teaching Massage</b><br/>
     More information coming soon.
 </p>
+
 <br/>
 <p>
     <b>*NOTE: </b>Due to the individuality of the individual's build, muscles, and therapy goals. 
     Special attention can be paid to any of the muscles listed above in order to provide a better 
     therapeutic massage experience as well as to provide release of tensed muscles needing more time. 
     Any part of any massage can be omitted per request. 
+
+</p>
+
+<p>
+    For locations more than 25 Miles away from <a href="https://www.google.com/maps/preview?authuser=0#!q=hawley%2C+pa&data=!4m15!2m14!1m13!1s0x89c4b1b4b1fa3c51%3A0x6f0fe9702451cdc!3m8!1m3!1d26319325!2d-95.677068!3d37.0625!3m2!1i1600!2i775!4f13.1!4m2!3d41.4759224!4d-75.1821189">Hawley, PA</a>, there will be a $0.30 charge per mile OVER the 25 mile limit. 
+    If you are not sure if RAIN would travel to your area, please do not hesitate to <a href="ContactUs.php">contact us</a>. 
+    Arrangements can sometimes be made for farther location requests. 
 
 </p>
 <?php
