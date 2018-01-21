@@ -7,10 +7,11 @@ var pagePaths = glob.sync('src/*.html');
 for (var pagePath of pagePaths) {
     console.log("Processing " + pagePath);
     var pageFullPath = path.resolve(pagePath);
+
     var pageContents = processPage(pageFullPath);
     //write the page to the root directory
     var filename = path.basename(pageFullPath);
-    fs.writeFileSync(filename, pageContents, { flag: 'w' });
+    fs.writeFileSync(path.join(__dirname, 'docs', filename), pageContents, { flag: 'w' });
 }
 
 function processPage(pageFullPath) {
