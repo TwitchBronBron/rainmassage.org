@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-47120707-1"></script>
@@ -27,32 +28,66 @@
 </head>
 
 <body>
-    <div id="banner" class="stacked">
+    <!-- <div id="banner" class="stacked">
         <img src="images/flower.jpg" style="margin-top:0px" />
         <div class="logo">
             <span style="font-size:40px; ">Rain Therapeutic Massage</span>
             <br/>
             <span>RELAXING~ATTENTIVE~INDIVIDUALLY~NATURALISTIC</span>
         </div>
+    </div> -->
+    <div id="banner" class="stacked">
+        <img src="images/flower.jpg" style="margin-top:0px" />
+        <div class="logo">
+            <span class="brand">Rain Therapeutic Massage</span>
+            <span class="brand-description">RELAXING~ATTENTIVE~INDIVIDUALLY~NATURALISTIC</span>
+        </div>
     </div>
+    <link rel="stylesheet" href="styles/navbar.css" />
     
-    <div id="navbar" class="stacked">
-        <a id="indexLink" href="index.html">Home</a>
-        <a id="historyLink" href="history.html">History</a>
-        <a id="locationsLink" href="locations.html">Locations</a>
-        <a id="servicesLink" href="services.html">Services</a>
-        <a id="contactUsLink" href="contact-us.html">Contact Us</a>
+    <nav>
+        <input type="checkbox" id="hamburger-checkbox" class="hidden" />
+        <label for="hamburger-checkbox" class="hamburger-button">
+            <i></i>
+            <i></i>
+            <i></i>
+        </label>
+        <a id="navbar-title" href="index.html" class="visible-small-block brand">RAIN Massage</a>
+        <div class="nav-container">
+            <ul>
+                <li>
+                    <a id="indexLink" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a id="historyLink" href="history.html">History</a>
+                </li>
+                <li>
+                    <a id="locationsLink" href="locations.html">Locations</a>
+                </li>
+                <li>
+                    <a id="servicesLink" href="services.html">Services</a>
+                </li>
+                <li>
+                    <a id="contactUsLink" href="contact-us.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+        <div id="contact-us-stacked" class="stacked">
+            <h1>Contact Information</h1>
+            Madison Plumb
+            <br/> Licensed Massage Therapist
+            <br/>
+            <a href="tel:7173771641">717.377.1641</a>
+            <br/>
+            <a href="mailto:rainmassagetherapy@gmail.com">RainMassageTherapy@gmail.com</a>
+        </div>
     </div>
-
-    <div class="content stacked">
-        <h1>Contacting Rain Massage</h1>
-        Madison Plumb
-        <br/> Licensed Massage Therapist
-        <br/>
-        <a href="tel:7173771641">717.377.1641</a>
-        <br/>
-        <a href="mailto:rainmassagetherapy@gmail.com">RainMassageTherapy@gmail.com</a>
-    </div>
+    <span id="copyright">Copyright &copy; Madison Plumb 2018</span>
+    <script>
+        document.getElementById("copyright").innerHTML = "Copyright  &copy; Madison Plumb " + (new Date().getFullYear());
+    </script>
 </body>
 
 </html>

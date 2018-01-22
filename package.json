@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node build.js",
+    "watch": "node build.js --watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/TwitchBronBron/RainMassage#readme",
   "devDependencies": {
-    "glob": "^7.1.2"
+    "colors": "^1.1.2",
+    "command-line-args": "^5.0.1",
+    "glob": "^7.1.2",
+    "livereload": "^0.6.3",
+    "node-watch": "^0.5.5"
   }
 }
