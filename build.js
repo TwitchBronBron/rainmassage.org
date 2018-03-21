@@ -46,10 +46,11 @@ function processPage(pageFullPath) {
 
 function build() {
     console.log("Building.".yellow.bold);
+    try { fs.mkdirSync('docs'); } catch (e) { }
     //get every root-level html page from src
     var pagePaths = glob.sync('src/*.html');
     for (var pagePath of pagePaths) {
-        console.log(("Processing " + pagePath).blue);
+        console.log(("Processing " + pagePath).magenta);
         var pageFullPath = path.resolve(pagePath);
 
         var pageContents = processPage(pageFullPath);
