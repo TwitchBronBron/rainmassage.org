@@ -58,7 +58,22 @@ function build() {
         var filename = path.basename(pageFullPath);
         fs.writeFileSync(path.join(__dirname, 'docs', filename), pageContents, { flag: 'w' });
     }
+    console.log('Copying static files');
+    copyStaticFiles('src/images/**/*', 'docs/images');
+    copyStaticFiles('src/CNAME', 'docs');
+    copyStaticFiles('src/styles/**/*', 'docs/styles');
     console.log(("Build complete: " + new Date().toISOString() + '.').green.bold);
+}
+
+function copyStaticFiles(sourceGlob, destinationFolderPath) {
+    //make the destination folder if it doesn't already exist
+    try { fs.mkdirSync(destinationFolderPath); } catch (e) { }
+    var filePaths = glob.sync(sourceGlob);
+    for (var j = 0; j < filePaths.length; j++) {
+        var filePath = filePaths[j];
+        var name = path.basename(filePath);
+        fs.copyFileSync(filePath, destinationFolderPath + '/' + name);
+    }
 }
 var server;
 function watch() {
