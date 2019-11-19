@@ -46,7 +46,7 @@ function processPage(pageFullPath) {
 
 function build() {
     console.log("Building.".yellow.bold);
-    try { fs.mkdirSync('docs'); } catch (e) { }
+    try { fs.mkdirSync('dist'); } catch (e) { }
     //get every root-level html page from src
     var pagePaths = glob.sync('src/*.html');
     for (var pagePath of pagePaths) {
@@ -56,12 +56,12 @@ function build() {
         var pageContents = processPage(pageFullPath);
         //write the page to the root directory
         var filename = path.basename(pageFullPath);
-        fs.writeFileSync(path.join(__dirname, 'docs', filename), pageContents, { flag: 'w' });
+        fs.writeFileSync(path.join(__dirname, 'dist', filename), pageContents, { flag: 'w' });
     }
     console.log('Copying static files');
-    copyStaticFiles('src/images/**/*', 'docs/images');
-    copyStaticFiles('src/CNAME', 'docs');
-    copyStaticFiles('src/styles/**/*', 'docs/styles');
+    copyStaticFiles('src/images/**/*', 'dist/images');
+    copyStaticFiles('src/CNAME', 'dist');
+    copyStaticFiles('src/styles/**/*', 'dist/styles');
     console.log(("Build complete: " + new Date().toISOString() + '.').green.bold);
 }
 
@@ -85,7 +85,7 @@ function watch() {
     });
 
     server = livereload.createServer();
-    server.watch(__dirname + "/docs");
+    server.watch(__dirname + "/dist");
 }
 
 if (options.watch) {
