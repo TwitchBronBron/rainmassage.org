@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="RAIN Massage is a small massage company based out of Pike County, Pennsylvania. We are a traveling company, meaning that we come to you. Contact us today to schedule your massage!" />
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="favicon.ico">
+<!--include the stylesheets with a bogus media type so the browser loads the files, but does not block rendering-->
+<link href='https://fonts.googleapis.com/css?family=IM+Fell+English+SC' rel='stylesheet' type='text/css' media="none" onload="if(media!='all')media='all'">
+<link href='https://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css' media="none" onload="if(media!='all')media='all'">
+
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>Locations</title>
+
+    <style type="text/css">
+        #locationsLink {
+            color: grey !important;
+            text-decoration: underline !important;
+            border-bottom: 1px solid grey;
+        }
+        .location-list a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="banner" class="stacked">
+    <img src="images/flower.jpg" style="margin-top:0px" />
+    <div class="logo">
+        <span style="font-size:40px; ">Rain Therapeutic Massage</span>
+        <br/>
+        <span>RELAXING~ATTENTIVE~INDIVIDUALLY~NATURALISTIC</span>
+    </div>
+</div> -->
+<div id="banner" class="stacked">
+    <img src="images/flower.jpg" alt="Banner image of a flower" style="margin-top:0px" />
+    <div class="logo">
+        <span class="brand">Rain Therapeutic Massage</span>
+        <span class="brand-description">RELAXING~ATTENTIVE~INDIVIDUALLY~NATURALISTIC</span>
+    </div>
+</div>
+<link rel="stylesheet" href="styles/navbar.css">
+
+<nav>
+    <input type="checkbox" id="hamburger-checkbox" class="hidden" />
+    <label for="hamburger-checkbox" class="hamburger-button">
+        <i></i>
+        <i></i>
+        <i></i>
+    </label>
+    <a id="navbar-title" href="index.html" class="visible-small-block brand">RAIN Massage</a>
+    <div class="nav-container">
+        <ul>
+            <li>
+                <a id="indexLink" href="index.html">Home</a>
+            </li>
+            <li>
+                <a id="historyLink" href="history.html">History</a>
+            </li>
+            <li>
+                <a id="locationsLink" href="locations.html">Locations</a>
+            </li>
+            <li>
+                <a id="servicesLink" href="services.html">Services</a>
+            </li>
+            <li>
+                <a id="contactUsLink" href="contact-us.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="content">
+        <div class="stacked">
+
+            <h1>Locations</h1>
+            <p>
+                RAIN Massage currently provides services to the following locations in Pennsylvania:</p>
+            <ul class="location-list">
+                <li>
+                    <a href="https://goo.gl/maps/GpnjZ6pcAhN2" target="_blank">Monroe County</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/cifSgCcVzUn" target="_blank">Lehigh County</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/aPchNkiP4gL2" target="_blank">Northampton County</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/UN2NV16JruK2" target="_blank">Pike County</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/yNVqxhvPMUs" target="_blank">Wayne County</a>
+                </li>
+            </ul>
+            <p>Other locations are negotiable. Please contact us for more information.</p>
+        </div>
+    </div>
+    <span id="copyright">Copyright &copy; Madison Plumb 2018</span>
+<script>
+    document.getElementById("copyright").innerHTML = "Copyright  &copy; Madison Plumb " + (new Date().getFullYear());
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-47120707-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-47120707-1');
+</script>
+</body>
+
+</html>
